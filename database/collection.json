@@ -1,0 +1,173 @@
+[
+  {
+    "id": "2d3d9ce8-41f3-4d69-8496-738ff23c8a18",
+    "title": "The Shawshank Redemption",
+    "director": "Frank Darabont",
+    "actors": [
+      "Tim Robbins",
+      "\r\nMorgan Freeman",
+      "\r\nBob Gunton",
+      "\r\nWilliam Sadler",
+      "\r\nClancy Brown",
+      "\r\nGil Bellows",
+      "\r\nJames Whitmore"
+    ],
+    "year": "1994",
+    "image": {
+      "fieldname": "image",
+      "originalname": "The ShawShank Redemption.jpg",
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "destination": "./public/images",
+      "filename": "The Shawshank Redemption-1994.jpg",
+      "path": "public/images/The Shawshank Redemption-1994.jpg",
+      "size": 134480
+    }
+  },
+  {
+    "id": "3e3ae517-4da0-432a-8745-7e8f4ba62820",
+    "title": "Terminator 2: Judgment Day",
+    "director": "James Cameron",
+    "actors": [
+      "Arnold Schwarzenegger",
+      " Linda Hamilton",
+      " Robert Patrick"
+    ],
+    "year": "1991",
+    "image": {
+      "fieldname": "image",
+      "originalname": "Terminator2poster.jpg",
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "destination": "./public/images",
+      "filename": "Terminator 2: Judgment Day-1991.jpg",
+      "path": "public/images/Terminator 2: Judgment Day-1991.jpg",
+      "size": 51085
+    }
+  },
+  {
+    "id": "4e8c6b54-8500-4dd9-ad38-5386f034f8d8",
+    "title": "Avatar",
+    "director": "James Cameron",
+    "actors": [
+      "Sam Worthington",
+      "\r\nZoe Saldana",
+      "\r\nStephen Lang",
+      "\r\nMichelle Rodriguez",
+      "\r\nSigourney Weaver"
+    ],
+    "year": "2009",
+    "image": {
+      "fieldname": "image",
+      "originalname": "Avatar.jpg",
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "destination": "./public/images",
+      "filename": "Avatar-2009.jpg",
+      "path": "public/images/Avatar-2009.jpg",
+      "size": 159755
+    }
+  },
+  {
+    "id": "5df28631-3723-4a3b-855c-0f7754fd0dc4",
+    "title": "Peppa Pig",
+    "director": "Neville Astley",
+    "actors": [
+      "Lily Snowden-Fine (2004)",
+      "\r\nCecily Bloom (2006–2007)",
+      "\r\nHarley Bird (2007–2020)",
+      "\r\nAmelie Bea Smith (2020–present)",
+      "\r\nJohn Sparkes",
+      "\r\nMorwenna Banks",
+      "\r\nRichard Ridings",
+      "\r\nOliver May",
+      "\r\nAlice May"
+    ],
+    "year": "2004",
+    "image": {
+      "fieldname": "image",
+      "originalname": "Peppa Pig.jpg",
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "destination": "./public/images",
+      "filename": "Peppa Pig-2004.jpg",
+      "path": "public/images/Peppa Pig-2004.jpg",
+      "size": 118912
+    }
+  },
+  {
+    "id": "cf2dbd46-17d7-40c9-b608-64960c7b08c8",
+    "title": "Around the World in 80 Days",
+    "director": "Buzz Kulik",
+    "actors": [
+      "Pierce Brosnan",
+      "\r\nEric Idle",
+      "\r\nJulia Nickson"
+    ],
+    "year": "1989",
+    "image": {
+      "fieldname": "image",
+      "originalname": "Around The World In 80 Days.jpg",
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "destination": "./public/images",
+      "filename": "Around the World in 80 Days-1989.jpg",
+      "path": "public/images/Around the World in 80 Days-1989.jpg",
+      "size": 132501
+    }
+  },
+  {
+    "id": "dff78419-d353-4b37-b7fa-862ad41dfb6d",
+    "title": "Shaun the Sheep",
+    "director": "Nick Park",
+    "actors": [
+      "Justin Fletcher",
+      "\r\nJohn Sparkes",
+      "\r\nKate Harbour",
+      "\r\nRichard Webber",
+      "\r\nEmma Tate",
+      "\r\nAndy Nyman",
+      "\r\nSimon Greenall",
+      "\r\nJo Allen"
+    ],
+    "year": "2007",
+    "image": {
+      "fieldname": "image",
+      "originalname": "ShaunTheSheep.png",
+      "encoding": "7bit",
+      "mimetype": "image/png",
+      "destination": "./public/images",
+      "filename": "Shaun the Sheep-2007.png",
+      "path": "public/images/Shaun the Sheep-2007.png",
+      "size": 556192
+    }
+  },
+  {
+    "id": "63264ddf-16a7-4861-bcc0-c8b43a8abaeb",
+    "title": "Fauda",
+    "director": "Lior Raz",
+    "actors": [
+      "Lior Raz",
+      "\r\nHisham Sulliman",
+      "\r\nShadi Mar'i",
+      "\r\nLaëtitia Eïdo",
+      "\r\nTzachi Halevy",
+      "\r\nYuval Segal",
+      "\r\nNeta Gerti",
+      "\r\nTomer Kapon",
+      "\r\nItzik Cohen",
+      "\r\nRona-Lee Shimon"
+    ],
+    "year": "2015",
+    "image": {
+      "fieldname": "image",
+      "originalname": "Fauda.jpg",
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "destination": "./public/images",
+      "filename": "Fauda-2015.jpg",
+      "path": "public/images/Fauda-2015.jpg",
+      "size": 58326
+    }
+  }
+]

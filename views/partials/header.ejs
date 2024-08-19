@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Cinema</title>
+  <link rel="stylesheet" href="/styles/output.css">
+  <link rel="stylesheet" href="/styles/index.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body class="bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100 flex flex-col min-h-screen">
+  <header class="sticky top-0 bg-white dark:bg-gray-900 bg-opacity-90 shadow-lg flex items-center justify-between p-4 z-50">
+    <!-- Logo -->
+    <div class="flex items-center">
+      <a href="/" class="text-xl font-bold pl-5  inline-block text-transparent bg-clip-text bg-red-600 dark:bg-gradient-to-r from-red-700 dark:via-red-500 dark:to-red-700">Home Cinema</a>
+    </div>
+
+    <!-- Search bar -->
+    <div class="flex-grow mx-10">
+      <input type="text" name="search" id="search" placeholder="Find a movie" class="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+    </div>
+
+    <!-- Menu -->
+    <nav class="hidden lg:flex items-center space-x-8">
+      <ul class="flex space-x-6 text-gray-700 dark:text-gray-300">
+        <li><a href="/" class="hover:text-blue-300">Home</a></li>
+        <li><a href="/add" class="hover:text-red-500">Add movie</a></li>
+        <li><a href="#" class="hover:text-blue-300">About</a></li>
+      </ul>
+      <ul class="flex space-x-6 text-gray-500 dark:text-gray-400 ml-8">
+        <li><a href="#" class="hover:text-green-500">Log In</a></li>
+        <li><a href="#" class="hover:text-blue-400">Sign Up</a></li>
+      </ul>
+    </nav>
+
+    <div class="lg:hidden">
+      <button id="menuButton" class="text-gray-700 dark:text-gray-300 focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden fixed inset-0 bg-gray-900 bg-opacity-75 z-50">
+    <div class="fixed top-0 right-0 w-64 h-full bg-white dark:bg-gray-800 p-4">
+      <button id="closeButton" class="text-gray-700 dark:text-gray-300 focus:outline-none mb-4">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+      <ul class="space-y-4 text-gray-700 dark:text-gray-300">
+        <li><a href="/" class="block hover:text-blue-300">Home</a></li>
+        <li><a href="/add" class="block hover:text-red-500">Add movie</a></li>
+        <li><a href="#" class="block hover:text-blue-300">About</a></li>
+        <li class="border-t border-gray-200 dark:border-gray-700 pt-4"><a href="#" class="block hover:text-green-500">Log In</a></li>
+        <li><a href="#" class="block hover:text-blue-500">Sign Up</a></li>
+      </ul>
+    </div>
+  </div>
+
+
+  <!-- Activation Mobile menu script -->
+  <script>
+    const menuButton = $('#menuButton');
+    const closeButton = $('#closeButton');
+    const mobileMenu = $('#mobileMenu');
+
+    menuButton.on('click', () => {
+      mobileMenu.toggleClass('hidden');
+    });
+
+    closeButton.on('click', () => {
+      mobileMenu.addClass('hidden');
+    });
+  </script>
+</body>
+
+</html>

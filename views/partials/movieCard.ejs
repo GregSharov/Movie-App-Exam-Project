@@ -1,0 +1,62 @@
+<div class="relative bg-white dark:bg-gray-900 bg-gradient-to-tl from-gray-100 to-white dark:bg-gradient-to-tl dark:from-gray-800 dark:to-gray-900 p-6 rounded-lg shadow-md movie-card">
+  <div class="mb-4">
+    <div class="flex justify-between">
+      <p class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-2"><%= movie.title %></p>
+      <!-- Delete movie button -->
+      <form action="/delete/<%= movie.id %>" method="post" class="delete-movie-form text-right">
+        <button type="button" class="deleteButton text-gray-500 hover:text-gray-700">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </form>
+    </div>
+    <div class="flex flex-col items-center">
+      <% if (movie.image && movie.image.path) { %>
+      <% const imagePath = movie.image.path.replace("public", "") %>
+      <img src="<%= imagePath %>" alt="Image for <%= movie.title %>" class="cursor-pointer h-80 w-60 rounded-lg mt-4 mb-4" onclick="openModal('<%= movie.id %>')">
+      <% } %>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="movie-modal-<%= movie.id %>" tabindex="-1" aria-hidden="true" class="hidden fixed inset-0 z-50 flex items-center justify-center">
+  <div class="relative p-4 w-auto max-w-2xl max-h-full">
+    <!-- Modal content -->
+    <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+      <!-- Modal header -->
+      <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+        <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+          <%= movie.title %>
+        </h3>
+      </div>
+      <!-- Modal body -->
+      <div class="p-4 md:p-5 space-y-4">
+        <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+          Year: <%= movie.year %>
+        </p>
+        <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+          Director: <%= movie.director %>
+        </p>
+        <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+          Actors: <%= movie.actors.join(", ") %>
+        </p>
+      </div>
+      <!-- Modal footer -->
+      <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+        <button type="button" class="text-black bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" onclick="closeModal('<%= movie.id %>')">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function openModal(movieId) {
+    document.getElementById('movie-modal-' + movieId).classList.remove('hidden');
+  }
+
+  function closeModal(movieId) {
+    document.getElementById('movie-modal-' + movieId).classList.add('hidden');
+  }
+</script>
